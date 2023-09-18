@@ -138,3 +138,13 @@ margin: 15px;
     width: 100%;
     margin-bottom: 100px;
 }
+
+.theme-toggle {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #000;
+}
+.radio-container {
+    margin-bottom: 12px;
+}

@@ -49,7 +49,7 @@ module.exports = {
          h6:              'var(--h6)',
 
          caption:         'var(--caption)',
-         button:           'var(--button)',
+         button:          'var(--button)',
          buttonSmall:     'var(--buttonSmall)',
          paragraph:       'var(--paragraph)',
          link:            'var(--link)',
