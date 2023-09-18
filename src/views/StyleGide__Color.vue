@@ -2,7 +2,7 @@
     <div class="component-item">
         <ul class="color-list">
             <li class="color-item">
-                <div class="color-show"></div>
+                <div class="color-show bg-gradient"></div>
                 <div class="color-title">Gradient</div>
                 <div class="color-hex">#9F5AB8 <br> #1E99B4</div>
             </li>

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gradient: 'var(--primary)'
+        gradient: 'var(--primary)',
       }
     },
   },
