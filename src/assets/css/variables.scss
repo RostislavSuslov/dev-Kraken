@@ -1,10 +1,46 @@
-$primary: #a2f27e;
+$primary:           #a2f27e;
+$blue:              #DBE6ED;
+$brandBlue:         #4288B5;
+$blueSecondary:     #072E53;
+$purple:            #F4DCFF;
+$brandPurple:       #BA90CE;
+$red:               #F2E1E0;
+$redSecondary:      #9B1C13;
+$green:             #D1E7DD;
+$greenSecondary:    #0F5132;
+$Gold:              #FFF3CD;
+$goldSecondary:     #664D03;
+$light:             #FFFFFF;
+$gray:              #F6F6FA;
+$graySecondary:     #E9E9E9;
+$grayThird:         #989898;
+$grayFourth:        #323232;
+$dark:              #0E3046;
+$darkSecondary:     #202637;
+$darkThird:         #001223;
+
+
 
 :root {
-    --primary: $primary;
-}
- 
-
-.color-show {
-    background-color: $primary;
+    --primary:          #{$primary};
+    --blue:             #{$blue};
+    --brandBlue:        #{$brandBlue};
+    --blueSecondary:    #{$blueSecondary};
+    --blueSecondary:    #{$blueSecondary};
+    --purple:           #{$purple};
+    --brandPurple:      #{$brandPurple};
+    --red:              #{$red};
+    --redSecondary:     #{$redSecondary};
+    --green:            #{$green};
+    --greenSecondary:   #{$greenSecondary};
+    --gold:             #{$gold};
+    --goldSecondary:    #{$goldSecondary};
+    --light:            #{$Light};
+    --gray:             #{$gray};
+    --graySecondary:    #{$graySecondary};
+    --grayThird:        #{$grayThird};
+    --grayFourth:       #{$grayFourth};
+    --dark:             #{$dark};
+    --darkSecondary:    #{$darkSecondary};
+    --darkThird:        #{$darkThird};
 }
