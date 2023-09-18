@@ -1,10 +1,16 @@
 <script setup>
-    import { RouterLink, RouterView } from 'vue-router'
+
+    import Sidebar from './components/Sidebar.vue';
+    import Main from './components/Main.vue';
 </script>
 
-
+ 
+    
 <template>
-  App
+    <div id="root">
+       <Sidebar></Sidebar>
+       <Main></Main>
+    </div>
 </template>  
 
 

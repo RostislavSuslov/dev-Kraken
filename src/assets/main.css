@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/*temporary styles*/
+body {
+    background-color: #F6F6FA;
+}
+
+#root {
+    max-width: 1780px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 6 / 2;
+}
+
+main {
+    grid-area: 1 / 2 / 6 / 6;
+}
+
+.sidebar {
+    background-color: #001223;
+    color: #fff;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+main {
+    margin-top: 100px;
+    padding: 30px 60px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 0 80px 75px;
+}
+
+.burger {
+    display: none;
+}
+
+.main-navigation {
+    display: grid;
+
+}
+
+.main-navigation a {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 20px 40px 20px 75px;
+    border-radius: 2px;
+    transition: .3s;
+}
+
+.main-navigation a:hover {
+    background-color: #202637;
+}
+
+.user-navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 20px 35px;
+    background: #fff;
+    height: 100px;
+    color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.style-navigation {
+    background-color: #202637;
+    color: #fff;
+    padding: 20px 50px;
+    border-radius: 2px;
+}
+
+.style-item {
+    font-size: 18px;
+
+    margin: 0 15px;
+}
+
+.component-item {
+    min-height: calc(100vh - 230px);
+    background: white;
+    padding: 50px;
+}
