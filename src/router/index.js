@@ -48,7 +48,8 @@ const router = createRouter({
     //   // which is lazy-loaded when the route is visited.
     //   // component: () => import('../views/AboutView.vue')
     // }
-  ]
+  ],
+ 
 })
 
 export default router

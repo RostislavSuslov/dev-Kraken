@@ -1,10 +1,12 @@
-<script>
+<script setup>
     import StyleGide__Alert from '../views/StyleGide__Alert.vue'
     import StyleGide__Buttons from '../views/StyleGide__Buttons.vue'
     import StyleGide__Color from '../views/StyleGide__Color.vue'
     import StyleGide__Icon from '../views/StyleGide__Icon.vue'
     import StyleGide__Input from '../views/StyleGide__Input.vue'
     import StyleGide__PrintingType from '../views/StyleGide__PrintingType.vue'
+
+    
 </script>
 
 <template>
