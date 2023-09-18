@@ -2,7 +2,7 @@
 
 <template>
     <div class="sidebar">
-        <a href="#" class="logo">
+        <a href="/" class="logo">
             <img src="src/assets/logo.svg" alt="logo-Kraken-CRM">
         </a>
         <button class="burger">burger</button>

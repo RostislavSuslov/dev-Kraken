@@ -10,6 +10,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/style-color',
+      name: 'style-color',
+      component: StyleGide__Color,
+      meta: { isHome: true },
+    },
+    {
       path: '/style-alert',
       name: 'style-alert',
       component: StyleGide__Alert
@@ -18,11 +24,6 @@ const router = createRouter({
       path: '/style-buttons',
       name: 'style-buttons',
       component: StyleGide__Buttons
-    },
-    {
-      path: '/style-color',
-      name: 'style-color',
-      component: StyleGide__Color
     },
     {
       path: '/style-icon',

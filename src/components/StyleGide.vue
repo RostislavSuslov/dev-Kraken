@@ -10,11 +10,11 @@
 <template>
     <nav class="style-navigation">
         <router-link to="/style-color" class="style-item">color</router-link>
+        <router-link to="/style-printing-type" class="style-item">printing-type</router-link>
         <router-link to="/style-alert" class="style-item">alert</router-link>
         <router-link to="/style-buttons" class="style-item">buttons</router-link>
         <router-link to="/style-icon" class="style-item">icon</router-link>
         <router-link to="/style-input" class="style-item">input</router-link>
-        <router-link to="/style-printing-type" class="style-item">printing-type</router-link>
     </nav>
     <div class="style-components">
         <router-view></router-view>
