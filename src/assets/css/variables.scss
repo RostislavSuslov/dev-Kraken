@@ -8,7 +8,7 @@ $red:               #F2E1E0;
 $redSecondary:      #9B1C13;
 $green:             #D1E7DD;
 $greenSecondary:    #0F5132;
-$Gold:              #FFF3CD;
+$gold:              #FFF3CD;
 $goldSecondary:     #664D03;
 $light:             #FFFFFF;
 $gray:              #F6F6FA;
@@ -19,7 +19,17 @@ $dark:              #0E3046;
 $darkSecondary:     #202637;
 $darkThird:         #001223;
 
-
+$h1:            36px;
+$h2:            24px;
+$h3:            20px;
+$h4:            20px;
+$h5:            18px;
+$h6:            16px;
+$caption:       14px;
+$button:        20px;
+$buttonSmall:   14px;
+$paragraph:     18px;
+$link:          14px;
 
 :root {
     --primary:          #{$primary};
@@ -35,7 +45,7 @@ $darkThird:         #001223;
     --greenSecondary:   #{$greenSecondary};
     --gold:             #{$gold};
     --goldSecondary:    #{$goldSecondary};
-    --light:            #{$Light};
+    --light:            #{$light};
     --gray:             #{$gray};
     --graySecondary:    #{$graySecondary};
     --grayThird:        #{$grayThird};
@@ -43,4 +53,16 @@ $darkThird:         #001223;
     --dark:             #{$dark};
     --darkSecondary:    #{$darkSecondary};
     --darkThird:        #{$darkThird};
+
+    --h1:          #{$h1};
+    --h2:          #{$h2};
+    --h3:          #{$h3};
+    --h4:          #{$h4};
+    --h5:          #{$h5};
+    --h6:          #{$h6};
+    --caption:     #{$caption};
+    --button:      #{$button};
+    --buttonSmall: #{$buttonSmall};
+    --paragraph:   #{$paragraph};
+    --link:        #{$link};
 }
