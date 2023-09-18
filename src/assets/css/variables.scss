@@ -1,3 +1,4 @@
+/*defaul theme*/
 $primary:           #a2f27e;
 $blue:              #DBE6ED;
 $brandBlue:         #4288B5;
@@ -65,4 +66,80 @@ $link:          14px;
     --buttonSmall: #{$buttonSmall};
     --paragraph:   #{$paragraph};
     --link:        #{$link};
+}
+
+
+/*theme-second*/
+
+@mixin theme-second {
+    $primary:           #7ecbf2;
+    $blue:              #ededdb;
+    $brandBlue:         #5db542;
+    $blueSecondary:     #075316;
+    $purple:            #dcf2ff;
+    $brandPurple:       #90c8ce;
+    $red:               #ece0f2;
+    $redSecondary:      #92139b;
+    $green:             #D1E7DD;
+    $greenSecondary:    #43510f;
+    $gold:              #ffcdcd;
+    $goldSecondary:     #660331;
+    $light:             #ffffff;
+    $gray:              #f6faf9;
+    $graySecondary:     #e9e9e9;
+    $grayThird:         #989898;
+    $grayFourth:        #323232;
+    $dark:              #0e461f;
+    $darkSecondary:     #203731;
+    $darkThird:         #002312;
+}
+
+
+
+.theme-second {
+    @include theme-second;
+
+    --primary:           #7ecbf2;
+    --blue:              #ededdb;
+    --brandBlue:         #5db542;
+    --blueSecondary:     #075316;
+    --purple:            #dcf2ff;
+    --brandPurple:       #90c8ce;
+    --red:               #ece0f2;
+    --redSecondary:      #92139b;
+    --green:             #D1E7DD;
+    --greenSecondary:    #43510f;
+    --gold:              #ffcdcd;
+    --goldSecondary:     #660331;
+    --light:             #ffffff;
+    --gray:              #f6faf9;
+    --graySecondary:     #e9e9e9;
+    --grayThird:         #989898;
+    --grayFourth:        #323232;
+    --dark:              #0e461f;
+    --darkSecondary:     #203731;
+    --darkThird:         #002312;
+
+
+    // --primary:          #{$primary};
+    // --blue:             #{$blue};
+    // --brandBlue:        #{$brandBlue};
+    // --blueSecondary:    #{$blueSecondary};
+    // --blueSecondary:    #{$blueSecondary};
+    // --purple:           #{$purple};
+    // --brandPurple:      #{$brandPurple};
+    // --red:              #{$red};
+    // --redSecondary:     #{$redSecondary};
+    // --green:            #{$green};
+    // --greenSecondary:   #{$greenSecondary};
+    // --gold:             #{$gold};
+    // --goldSecondary:    #{$goldSecondary};
+    // --light:            #{$light};
+    // --gray:             #{$gray};
+    // --graySecondary:    #{$graySecondary};
+    // --grayThird:        #{$grayThird};
+    // --grayFourth:       #{$grayFourth};
+    // --dark:             #{$dark};
+    // --darkSecondary:    #{$darkSecondary};
+    // --darkThird:        #{$darkThird};
 }
