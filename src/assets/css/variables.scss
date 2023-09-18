@@ -3,3 +3,12 @@ $primary: #f00;
 :root {
     --primary: $primary;
 }
+
+.color-show {
+    width: 100%;
+    height: 70px;
+    background: #000;
+    background: $primary;
+    border-radius: 2px;
+    margin-bottom: 6px;
+}
