@@ -39,7 +39,7 @@ onMounted(() => {
             <a href="settings">settings</a>
         </nav>
         <nav class="user-navigation">
-            <a href="">User Name</a>.
+            <a href="#">User Name</a>.
             <a href="log out">log out</a>
         </nav>
 

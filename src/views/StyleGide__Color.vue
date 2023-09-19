@@ -9,88 +9,88 @@
                 return {
                     colorValue: [
                         {
-                            variable: "primaryColor",
+                            class: "bg-primaryColor",
                             hex: "#9F5AB8",
                         },  
                         {
-                            variable: "secondaryColor",
+                            class: "bg-secondaryColor",
                             hex: "#888888",
                         }, 
                     
                         {
-                            variable: "primaryColor",
+                            class: "bg-primaryColor",
                             hex: "#000",
                         },
                         {
-                            variable: "brandPrimaryColor",
+                            class: "bg-brandPrimaryColor",
                             hex: "#000",
                         },
                         {
-                            variable: "secondaryColor",
+                            class: "bg-secondaryColor",
                             hex: "#000",
                         },
                         {
-                            variable: "secondaryPurple",
+                            class: "bg-secondaryPurple",
                             hex: "#000",
                         },
                         {
-                            variable: "brandSecondaryColor",
+                            class: "bg-brandSecondaryColor",
                             hex: "#000",
                         },
                         {
-                            variable: "accentRed",
+                            class: "bg-accentRed",
                             hex: "#000",
                         },
                         {
-                            variable: "accentRedSecondary",
+                            class: "bg-accentRedSecondary",
                             hex: "#000",
                         },
                         {
-                            variable: "accentGreen",
+                            class: "bg-accentGreen",
                             hex: "#000",
                         },
                         {
-                            variable: "accentGreenSecondary",
+                            class: "bg-accentGreenSecondary",
                             hex: "#000",
                         },
                         {
-                            variable: "accentGold",
+                            class: "bg-accentGold",
                             hex: "#000",
                         },
                         {
-                            variable: "accentGoldSecondary",
+                            class: "bg-accentGoldSecondary",
                             hex: "#000",
                         },
                         {
-                            variable: "lightBackground",
+                            class: "bg-lightBackground",
                             hex: "#000",
                         },
                         {
-                            variable: "grayBackground",
+                            class: "bg-grayBackground",
                             hex: "#000",
                         },
                         {
-                            variable: "graySecondary",
+                            class: "bg-graySecondary",
                             hex: "#000",
                         },
                         {
-                            variable: "grayTertiary",
+                            class: "bg-grayTertiary",
                             hex: "#000",
                         },
                         {
-                            variable: "grayQuaternary",
+                            class: "bg-grayQuaternary",
                             hex: "#000",
                         },
                         {
-                            variable: "darkBackground",
+                            class: "bg-darkBackground",
                             hex: "#000",
                         },
                         {
-                            variable: "darkSecondary",
+                            class: "bg-darkSecondary",
                             hex: "#000",
                         },
                         {
-                            variable: "darkTertiary",
+                            class: "bg-darkTertiary",
                             hex: "#000",
                         },
                     ]
@@ -110,9 +110,4 @@
         </ul>
     </div>
 </template>
-
  
-
-<style lang="scss">
-
-</style>
