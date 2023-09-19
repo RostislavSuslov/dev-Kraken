@@ -1,145 +1,123 @@
-/*defaul theme*/
-$primary:           #a2f27e;
-$blue:              #DBE6ED;
-$brandBlue:         #4288B5;
-$blueSecondary:     #072E53;
-$purple:            #F4DCFF;
-$brandPurple:       #BA90CE;
-$red:               #F2E1E0;
-$redSecondary:      #9B1C13;
-$green:             #D1E7DD;
-$greenSecondary:    #0F5132;
-$gold:              #FFF3CD;
-$goldSecondary:     #664D03;
-$light:             #FFFFFF;
-$gray:              #F6F6FA;
-$graySecondary:     #E9E9E9;
-$grayThird:         #989898;
-$grayFourth:        #323232;
-$dark:              #0E3046;
-$darkSecondary:     #202637;
-$darkThird:         #001223;
+/*primary theme*/
+$primaryColor:         #DBE6ED;
+$brandPrimaryColor:    #4288B5;
+$secondaryColor:       #072E53;
+$secondaryPurple:      #F4DCFF;
+$brandSecondaryColor:  #BA90CE;
+$accentRed:            #F2E1E0;
+$accentRedSecondary:   #9B1C13;
+$accentGreen:          #D1E7DD;
+$accentGreenSecondary: #0F5132;
+$accentGold:           #FFF3CD;
+$accentGoldSecondary:  #664D03;
+$lightBackground:      #FFFFFF;
+$grayBackground:       #F6F6FA;
+$graySecondary:        #E9E9E9;
+$grayTertiary:         #989898;
+$grayQuaternary:       #323232;
+$darkBackground:       #0E3046;
+$darkSecondary:        #202637;
+$darkTertiary:         #001223;
 
-$h1:            36px;
-$h2:            24px;
-$h3:            20px;
-$h4:            20px;
-$h5:            18px;
-$h6:            16px;
-$caption:       14px;
-$button:        20px;
-$buttonSmall:   14px;
-$paragraph:     18px;
-$link:          14px;
+/*secondary theme*/
+$invertedBlue:            #103918;          //           #DBE6ED
+$invertedBrandBlue:       #BD775A;          //           #4288B5
+$invertedBlueSecondary:   #F8D1AC;          //           #072E53
+$invertedPurple:          #0B2300;          //           #F4DCFF
+$invertedBrandPurple:     #457F31;          //           #BA90CE
+$invertedRed:             #0D1E1F;          //           #F2E1E0
+$invertedRedSecondary:    #64E3EC;          //           #9B1C13
+$invertedGreen:           #2E1811;          //           #D1E7DD
+$invertedGreenSecondary:  #F0AECF;          //           #0F5132
+$invertedGold:            #000C32;          //           #FFF3CD
+$invertedGoldSecondary:   #99B2FC;          //           #664D03
+$invertedLight:           #000000;          //           #FFFFFF
+$invertedGray:            #090909;          //           #F6F6FA
+$invertedGraySecondary:   #161616;          //           #E9E9E9
+$invertedGrayThird:       #676767;          //           #989898
+$invertedGrayFourth:      #CDCDCD;          //           #323232
+$invertedDark:            #F1C5B9;          //           #0E3046
+$invertedDarkSecondary:   #DFD9C8;          //           #202637
+$invertedDarkThird:       #FFEEDC;          //           #001223
+
+
+
+
+
+
+
+
+$fsH1:            36px;
+$fsH2:            24px;
+$fsH3:            20px;
+$fsH4:            20px;
+$fsH5:            18px;
+$fsH6:            16px;
+$fsCaption:       14px;
+$fsButton:        20px;
+$fsButtonSmall:   14px;
+$fsParagraph:     18px;
+$fsLink:          14px;
 
 :root {
-    --primary:          #{$primary};
-    --blue:             #{$blue};
-    --brandBlue:        #{$brandBlue};
-    --blueSecondary:    #{$blueSecondary};
-    --blueSecondary:    #{$blueSecondary};
-    --purple:           #{$purple};
-    --brandPurple:      #{$brandPurple};
-    --red:              #{$red};
-    --redSecondary:     #{$redSecondary};
-    --green:            #{$green};
-    --greenSecondary:   #{$greenSecondary};
-    --gold:             #{$gold};
-    --goldSecondary:    #{$goldSecondary};
-    --light:            #{$light};
-    --gray:             #{$gray};
-    --graySecondary:    #{$graySecondary};
-    --grayThird:        #{$grayThird};
-    --grayFourth:       #{$grayFourth};
-    --dark:             #{$dark};
-    --darkSecondary:    #{$darkSecondary};
-    --darkThird:        #{$darkThird};
+   --primaryColor:             #{$primaryColor};
+   --brandPrimaryColor:        #{$brandPrimaryColor};
+   --secondaryColor:           #{$secondaryColor};
+   --secondaryPurple:          #{$secondaryPurple};
+   --brandSecondaryColor:      #{$brandSecondaryColor};
+   --accentRed:                #{$accentRed};
+   --accentRedSecondary:       #{$accentRedSecondary};
+   --accentGreen:              #{$accentGreen};
+   --accentGreenSecondary:     #{$accentGreenSecondary};
+   --accentGold:               #{$accentGold};
+   --accentGoldSecondary:      #{$accentGoldSecondary};
+   --lightBackground:          #{$lightBackground};
+   --grayBackground:           #{$grayBackground};
+   --graySecondary:            #{$graySecondary};
+   --grayTertiary:             #{$grayTertiary};
+   --grayQuaternary:           #{$grayQuaternary};
+   --darkBackground:           #{$darkBackground};
+   --darkSecondary:            #{$darkSecondary};
+   --darkTertiary:             #{$darkTertiary};
 
-    --h1:          #{$h1};
-    --h2:          #{$h2};
-    --h3:          #{$h3};
-    --h4:          #{$h4};
-    --h5:          #{$h5};
-    --h6:          #{$h6};
-    --caption:     #{$caption};
-    --button:      #{$button};
-    --buttonSmall: #{$buttonSmall};
-    --paragraph:   #{$paragraph};
-    --link:        #{$link};
+    --fsH1:          #{$fsH1};
+    --fsH2:          #{$fsH2};
+    --fsH3:          #{$fsH3};
+    --fsH4:          #{$fsH4};
+    --fsH5:          #{$fsH5};
+    --fsH6:          #{$fsH6};
+    --fsCaption:     #{$fsCaption};
+    --fsButton:      #{$fsButton};
+    --fsButtonSmall: #{$fsButtonSmall};
+    --fsParagraph:   #{$fsParagraph};
+    --fsLink:        #{$fsLink};
 }
 
 
 /*theme-second*/
 
-@mixin theme-second {
-    $primary:           #7ecbf2;
-    $blue:              #ededdb;
-    $brandBlue:         #5db542;
-    $blueSecondary:     #075316;
-    $purple:            #dcf2ff;
-    $brandPurple:       #90c8ce;
-    $red:               #ece0f2;
-    $redSecondary:      #92139b;
-    $green:             #D1E7DD;
-    $greenSecondary:    #43510f;
-    $gold:              #ffcdcd;
-    $goldSecondary:     #660331;
-    $light:             #ffffff;
-    $gray:              #f6faf9;
-    $graySecondary:     #e9e9e9;
-    $grayThird:         #989898;
-    $grayFourth:        #323232;
-    $dark:              #0e461f;
-    $darkSecondary:     #203731;
-    $darkThird:         #002312;
-}
+ 
 
 
 
 .theme-second {
-    @include theme-second;
-
-    --primary:           #7ecbf2;
-    --blue:              #ededdb;
-    --brandBlue:         #5db542;
-    --blueSecondary:     #075316;
-    --purple:            #dcf2ff;
-    --brandPurple:       #90c8ce;
-    --red:               #ece0f2;
-    --redSecondary:      #92139b;
-    --green:             #D1E7DD;
-    --greenSecondary:    #43510f;
-    --gold:              #ffcdcd;
-    --goldSecondary:     #660331;
-    --light:             #ffffff;
-    --gray:              #f6faf9;
-    --graySecondary:     #e9e9e9;
-    --grayThird:         #989898;
-    --grayFourth:        #323232;
-    --dark:              #0e461f;
-    --darkSecondary:     #203731;
-    --darkThird:         #002312;
-
-
-    // --primary:          #{$primary};
-    // --blue:             #{$blue};
-    // --brandBlue:        #{$brandBlue};
-    // --blueSecondary:    #{$blueSecondary};
-    // --blueSecondary:    #{$blueSecondary};
-    // --purple:           #{$purple};
-    // --brandPurple:      #{$brandPurple};
-    // --red:              #{$red};
-    // --redSecondary:     #{$redSecondary};
-    // --green:            #{$green};
-    // --greenSecondary:   #{$greenSecondary};
-    // --gold:             #{$gold};
-    // --goldSecondary:    #{$goldSecondary};
-    // --light:            #{$light};
-    // --gray:             #{$gray};
-    // --graySecondary:    #{$graySecondary};
-    // --grayThird:        #{$grayThird};
-    // --grayFourth:       #{$grayFourth};
-    // --dark:             #{$dark};
-    // --darkSecondary:    #{$darkSecondary};
-    // --darkThird:        #{$darkThird};
+    --primaryColor:             #{$invertedBlue};
+    --brandPrimaryColor:        #{$invertedBrandBlue};
+    --secondaryColor:           #{$invertedBlueSecondary};
+    --secondaryPurple:          #{$invertedPurple};
+    --brandSecondaryColor:      #{$invertedBrandPurple};
+    --accentRed:                #{$invertedRed};
+    --accentRedSecondary:       #{$invertedRedSecondary};
+    --accentGreen:              #{$invertedGreen};
+    --accentGreenSecondary:     #{$invertedGreenSecondary};
+    --accentGold:               #{$invertedGold};
+    --accentGoldSecondary:      #{$invertedGoldSecondary};
+    --lightBackground:          #{$invertedLight};
+    --grayBackground:           #{$invertedGray};
+    --graySecondary:            #{$invertedGraySecondary};
+    --grayTertiary:             #{$invertedGrayThird};
+    --grayQuaternary:           #{$invertedGrayFourth};
+    --darkBackground:           #{$invertedDark};
+    --darkSecondary:            #{$invertedDarkSecondary};
+    --darkTertiary:             #{$invertedDarkThird};
 }

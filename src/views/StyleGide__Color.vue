@@ -1,123 +1,115 @@
 <template>
-    <div class="component-item">
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-gradient"></div>
-                <div class="color-title">Gradient</div>
-                <div class="color-hex">#9F5AB8 <br> #1E99B4</div>
+    <div class="component-item min-h-[calc(100vh-230px)] bg-white p-16 flex flex-wrap">
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-primaryColor"></div>
+                <div class="color-title font-semibold text-xs mb-3">primaryColor</div>
+                <div class="color-hex text-gray-500 text-sm">#9F5AB8 <br> #1E99B4</div>
             </li>
         </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-blue"></div>
-                <div class="color-title">Blue</div>
-                <div class="color-hex">#DBE6ED</div>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-brandPrimaryColor"></div>
+                <div class="color-title font-semibold text-xs mb-3">brandPrimaryColor</div>
+                <div class="color-hex text-gray-500 text-sm">#4288b5</div>
             </li>
-            <li class="color-item">
-                <div class="color-show bg-brandBlue"></div>
-                <div class="color-title">Brand Blue</div>
-                <div class="color-hex">#4288B5</div>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-secondaryColor"></div>
+                <div class="color-title font-semibold text-xs mb-3">secondaryColor</div>
+                <div class="color-hex text-gray-500 text-sm">#072e53</div>
             </li>
-            <li class="color-item">
-                <div class="color-show bg-blueSecondary"></div>
-                <div class="color-title">Blue Secondary</div>
-                <div class="color-hex">#072E53</div>
-            </li>
-        </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-purple"></div>
-                <div class="color-title">Purple</div>
-                <div class="color-hex">#F4DCFF</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-brandPurple"></div>
-                <div class="color-title">brand Purple</div>
-                <div class="color-hex">#BA90CE</div>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-secondaryPurple"></div>
+                <div class="color-title font-semibold text-xs mb-3">secondaryPurple</div>
+                <div class="color-hex text-gray-500 text-sm">#f4dcff</div>
             </li>
         </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-red"></div>
-                <div class="color-title">red</div>
-                <div class="color-hex">#F2E1E0</div>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-brandSecondaryColor"></div>
+                <div class="color-title font-semibold text-xs mb-3">brandSecondaryColor</div>
+                <div class="color-hex text-gray-500 text-sm">#ba90ce</div>
             </li>
-            <li class="color-item">
-                <div class="color-show bg-redSecondary"></div>
-                <div class="color-title">red Secondary</div>
-                <div class="color-hex">#9B1C13</div>
-            </li>
-        </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-green"></div>
-                <div class="color-title">Green</div>
-                <div class="color-hex">#D1E7DD</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-greenSecondary"></div>
-                <div class="color-title">green Secondary</div>
-                <div class="color-hex">#0F5132</div>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentRed"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentRed</div>
+                <div class="color-hex text-gray-500 text-sm">#f2e1e0</div>
             </li>
         </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-gold"></div>
-                <div class="color-title">Gold</div>
-                <div class="color-hex">#FFF3CD</div>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentRedSecondary"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentRedSecondary</div>
+                <div class="color-hex text-gray-500 text-sm">#9b1c13</div>
             </li>
-            <li class="color-item">
-                <div class="color-show bg-goldSecondary"></div>
-                <div class="color-title">Gold Secondary</div>
-                <div class="color-hex">#664D03</div>
-            </li>
-        </ul>
-        
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-light"></div>
-                <div class="color-title">Light</div>
-                <div class="color-hex">#FFFFFF</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-gray"></div>
-                <div class="color-title">Gray</div>
-                <div class="color-hex">#F6F6FA</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-graySecondary"></div>
-                <div class="color-title">gray Secondary</div>
-                <div class="color-hex">#E9E9E9</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-grayFourth"></div>
-                <div class="color-title">gray Fourth</div>
-                <div class="color-hex">#323232</div>
-            </li>
-            <li class="color-item">
-                <div class="color-show bg-dark"></div>
-                <div class="color-title">Dark</div>
-                <div class="color-hex">#0E3046</div>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentGreen"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentGreen</div>
+                <div class="color-hex text-gray-500 text-sm">#d1e7dd</div>
             </li>
         </ul>
-
-        <ul class="color-list">
-            <li class="color-item">
-                <div class="color-show bg-darkSecondary"></div>
-                <div class="color-title">Dark Secondary</div>
-                <div class="color-hex">#202637</div>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentGreenSecondary"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentGreenSecondary</div>
+                <div class="color-hex text-gray-500 text-sm">#0f5132</div>
             </li>
-            <li class="color-item">
-                <div class="color-show bg-darkThird"></div>
-                <div class="color-title">Dark Third</div>
-                <div class="color-hex">#001223</div>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentGold"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentGold</div>
+                <div class="color-hex text-gray-500 text-sm">#fff3cd</div>
             </li>
-            
+        </ul>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-accentGoldSecondary"></div>
+                <div class="color-title font-semibold text-xs mb-3">accentGoldSecondary</div>
+                <div class="color-hex text-gray-500 text-sm">#664d03</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-lightBackground"></div>
+                <div class="color-title font-semibold text-xs mb-3">lightBackground</div>
+                <div class="color-hex text-gray-500 text-sm">#ffffff</div>
+            </li>
+        </ul>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-grayBackground"></div>
+                <div class="color-title font-semibold text-xs mb-3">grayBackground</div>
+                <div class="color-hex text-gray-500 text-sm">#f6f6fa</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-graySecondary"></div>
+                <div class="color-title font-semibold text-xs mb-3">graySecondary</div>
+                <div class="color-hex text-gray-500 text-sm">#e9e9e9</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-grayTertiary"></div>
+                <div class="color-title font-semibold text-xs mb-3">grayTertiary</div>
+                <div class="color-hex text-gray-500 text-sm">#989898</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-grayQuaternary"></div>
+                <div class="color-title font-semibold text-xs mb-3">grayQuaternary</div>
+                <div class="color-hex text-gray-500 text-sm">#323232</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-darkBackground"></div>
+                <div class="color-title font-semibold text-xs mb-3">darkBackground</div>
+                <div class="color-hex text-gray-500 text-sm">#0e3046</div>
+            </li>
+        </ul>
+        <ul class="color-list flex m-3 mx-15">
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-darkSecondary"></div>
+                <div class="color-title font-semibold text-xs mb-3">darkSecondary</div>
+                <div class="color-hex text-gray-500 text-sm">#202637</div>
+            </li>
+            <li class="color-item mx-[15px] w-100 border border-gray-300 rounded-md p-4">
+                <div class="color-show w-[100px] h-[70px] rounded-md mb-6 bg-darkTertiary"></div>
+                <div class="color-title font-semibold text-xs mb-3">darkTertiary</div>
+                <div class="color-hex text-gray-500 text-sm">#001223</div>
+            </li>
         </ul>
     </div>
 </template>
