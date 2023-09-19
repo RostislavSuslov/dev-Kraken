@@ -3,19 +3,15 @@
     import Sidebar from './components/Sidebar.vue';
     import Main from './components/Main.vue';
     import ColorCardEasy from './components/ColorCardEasy.vue';
-   
 </script>
-
- 
-    
 <template>
     <div id="root">
         <Sidebar />
         <Main />
-        
+
         <ColorCardEasy title="Это тайтл" classColor="Это колоор" description="Это дескрипшин" />
-        <ColorCardEasy title="Это тайтл 2" classColor="Это колоор 2" description="Это дескрипшин 2" />
-        <ColorCardEasy title="Это тайтл 3" classColor="Это колоор 3" description="Это дескрипшин 3" />
+        <ColorCardEasy title="Это тайтл 2" classColor="bg-prymaryColor" description="Это дескрипшин 2" />
+        <ColorCardEasy title="Это тайтл 3" classColor="bg-secondaryColor" description="Это дескрипшин 3" />
     </div>
 </template>  
 
