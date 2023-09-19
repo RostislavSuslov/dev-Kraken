@@ -10,13 +10,13 @@
 </script>
 
 <template>
-    <nav class="style-navigation">
-        <router-link to="/style-color" class="style-item">color</router-link>
-        <router-link to="/style-printing-type" class="style-item">printing-type</router-link>
-        <router-link to="/style-alert" class="style-item">alert</router-link>
-        <router-link to="/style-buttons" class="style-item">buttons</router-link>
-        <router-link to="/style-icon" class="style-item">icon</router-link>
-        <router-link to="/style-input" class="style-item">input</router-link>
+    <nav class="style-navigation bg-secondaryColor text-lightBackground p-5 rounded-md">
+        <router-link to="/style-color" class="style-item text-paragraph px-5 hover:text-accentGold">color</router-link>
+        <router-link to="/style-printing-type" class="style-item text-paragraph px-5 hover:text-accentGold">printing-type</router-link>
+        <router-link to="/style-alert" class="style-item text-paragraph px-5 hover:text-accentGold">alert</router-link>
+        <router-link to="/style-buttons" class="style-item text-paragraph px-5 hover:text-accentGold">buttons</router-link>
+        <router-link to="/style-icon" class="style-item text-paragraph px-5 hover:text-accentGold">icon</router-link>
+        <router-link to="/style-input" class="style-item text-paragraph px-5 hover:text-accentGold">input</router-link>
     </nav>
     <div class="style-components">
         <router-view></router-view>
