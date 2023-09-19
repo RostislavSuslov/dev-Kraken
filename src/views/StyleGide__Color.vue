@@ -1,5 +1,6 @@
 <script>
     import ColorCard from '../components/ColorCard.vue';
+   
 
     // const props = defineProps({
     //     
@@ -100,11 +101,13 @@
                 ColorCard
             }
         }
-    
+        
 </script>
+ 
 
 <template>
     <div class="component-item min-h-[calc(100vh-230px)] bg-white p-16 flex flex-wrap">
+       
         <ul class="color-list flex m-3 mx-15 flex-wrap">
             <ColorCard v-for="color in colorValue" v-bind:key="color" v-bind:colorValue="color" />
         </ul>

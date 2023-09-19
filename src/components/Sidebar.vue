@@ -1,28 +1,28 @@
 <script setup>
      import { ref, onMounted } from 'vue';
 
-const radioButtons = ref(null);
+    const radioButtons = ref(null);
 
-onMounted(() => {
-  radioButtons.value = document.querySelectorAll('.radio-input');
+    onMounted(() => {
+    radioButtons.value = document.querySelectorAll('.radio-input');
 
-  radioButtons.value.forEach(radioButton => {
-    radioButton.addEventListener('change', () => {
-      document.body.classList.remove('theme-second');
+    radioButtons.value.forEach(radioButton => {
+        radioButton.addEventListener('change', () => {
+        document.body.classList.remove('theme-second');
 
-      switch (radioButton.id) {
-        case 'first':
-          document.body.classList.remove('theme-second');
-          break;
-        case 'custom':
-          document.body.classList.add('theme-second');
-          break;
-        default:
-          break;
-      }
+        switch (radioButton.id) {
+            case 'first':
+            document.body.classList.remove('theme-second');
+            break;
+            case 'custom':
+            document.body.classList.add('theme-second');
+            break;
+            default:
+            break;
+        }
+        });
     });
-  });
-});
+    });
 </script>
 
 <template>
