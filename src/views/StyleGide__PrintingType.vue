@@ -1,13 +1,9 @@
 <script setup>
-    import ColorCardEasy from '../components/ColorCardEasy.vue';
+
 </script>
 <template>
     <div class="component-item">
-        <ul class="color-list flex m-3 mx-15 flex-wrap">
-            <ColorCardEasy title="grayQuaternary" classColor="bg-grayQuaternary" description="#527483" />
-            <ColorCardEasy title="darkBackground" classColor="bg-darkBackground" description="#232265" />
-            <ColorCardEasy title="accentRedSecondary" classColor="bg-accentRedSecondary" description="#710033" />
-       </ul>
+       
         <ul class="printing-list">
             <li class="printing-item"><h1 class="text-fsH1">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1></li>
             <li class="printing-item"><h2 class="text-fsH2">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2></li>
