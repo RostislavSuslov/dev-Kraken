@@ -12,24 +12,27 @@
                            зміни теми  при вводі ключевого слова." />
 
         <form>
-            <DefaultInput id="input-custom"  v-model.trim.lazy="firstInput" v-model:custom-input="secondInput"/>
+            <DefaultInput id="input-custom"  label="input-custom" v-model.trim.lazy="firstInput" v-model:custom-input="secondInput"/>
           
                 <h2>{{ firstInput }}</h2>
                 <h2>{{ secondInput }}</h2>
 
-            <DefaultInput id="input-default" v-model="firstInput" v-model:custom-input="secondInput"/>
+            <DefaultInput id="input-default"  label="input-default"  v-model="firstInput" v-model:custom-input="secondInput"/>
         </form>
     </div>
     
 </template>
 <script setup>
-    import {ref, onMounted } from 'vue';
-    import HWtitle from '../../components/HWtitle.vue';
-    import DefaultInput from './input/DefaultInput.vue';
+   import {ref, onMounted } from 'vue';
+   import HWtitle from '../../components/HWtitle.vue';
+   import DefaultInput from './input/DefaultInput.vue';
  
-    
    const firstInput = ref('Hello');
    const secondInput = ref('Hello');
+
+   const inputCustom = ref("#input-custom");
+
+   console.log(inputCustom);
 
    const onInput = (inputValue) => {
     firstInput.value = inputValue
@@ -60,9 +63,23 @@
                 handleRadioButtonChange(radioButton);
             });
         });
-        }
+    }
+
+    const handleInputChange = () => {
+    if (firstInput.value === 'second' || secondInput.value === 'second') {
+        themes.custom();
+    }
+    }
+
+    function getInputVal() {
+        inputCustom.value.addEventListener("input", () => {
+            handleInputChange();
+        });
+    }
 
     onMounted(() => {
         setupRadioButtons();
+        getInputVal();
     });
-</script>
+</script> 
+ 
