@@ -1,5 +1,8 @@
 <template>
-    <div class="component-item">
-        input
-    </div>
+    <SlotInput></SlotInput>
 </template>
+
+
+<script setup>
+    import SlotInput from "../components/SlotInput.vue"
+</script>

@@ -73,6 +73,7 @@ body {
 .radio-container {
     margin-bottom: 12px;
 }
+                                               
 .input-box {
     position: relative;
 
@@ -84,14 +85,13 @@ body {
         bottom: 0;
         width: 10px;
         height: 10px;
-        background:   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Crect y='8' width='10' height='2' fill='%234288B5'/%3E%3Crect y='10' width='10' height='2' transform='rotate(-90 0 10)' fill='%234288B5'/%3E%3C/svg%3E") left bottom no-repeat;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10' fill='none'%3E%3Crect y='8' width='10' height='2' fill='%234288B5'/%3E%3Crect y='10' width='10' height='2' transform='rotate(-90 0 10)' fill='%234288B5'/%3E%3C/svg%3E") left bottom no-repeat;
     }
     &::before{
         left: inherit;
         right: 0;
-        background: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='8' width='10' height='2' fill='%234288B5'/%3E%3Crect x='8' y='10' width='10' height='2' transform='rotate(-90 8 10)' fill='%234288B5'/%3E%3C/svg%3E%0A") right bottom no-repeat;
+        background: `ottom no-repeat;
     }
-    
 }
 input {
     background-color: transparent;
