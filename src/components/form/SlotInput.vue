@@ -15,12 +15,6 @@
 </style>
 
 
-<script>
-    export default {
-        data() {
-            return {
-                slotsData: ['a', 'b', 'c', 'd']
-            };
-        }
-    };
+<script setup>
+    const slotsData = ['text', 'number', 'color', 'file']
 </script>
