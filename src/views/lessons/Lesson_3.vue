@@ -11,9 +11,8 @@
                         4) в кастомному інпуті додати логіку яка буде викликати тригер
                            зміни теми  при вводі ключевого слова." />
 
-        <form class="">
- 
-            <DefaultInput id="input-custom"  v-model="firstInput" v-model:custom-input="secondInput"/>
+        <form>
+            <DefaultInput id="input-custom"  v-model.trim.lazy="firstInput" v-model:custom-input="secondInput"/>
           
                 <h2>{{ firstInput }}</h2>
                 <h2>{{ secondInput }}</h2>
@@ -24,7 +23,7 @@
     
 </template>
 <script setup>
-    import {ref} from 'vue';
+    import {ref, onMounted } from 'vue';
     import HWtitle from '../../components/HWtitle.vue';
     import DefaultInput from './input/DefaultInput.vue';
  
@@ -35,4 +34,35 @@
    const onInput = (inputValue) => {
     firstInput.value = inputValue
    }
+
+   const setupRadioButtons = () => {
+        const radioButtons = document.querySelectorAll('.radio-input');
+
+        const themes = {
+            first: () => {
+            document.body.classList.remove('theme-second');
+            },
+            custom: () => {
+            document.body.classList.add('theme-second');
+            },
+            //add more thems
+        };
+
+        const handleRadioButtonChange = (radioButton) => {
+            const themeFunction = themes[radioButton.id];
+            if (themeFunction) {
+                themeFunction();
+            }
+        }
+
+        radioButtons.forEach(radioButton => {
+            radioButton.addEventListener('change', () => {
+                handleRadioButtonChange(radioButton);
+            });
+        });
+        }
+
+    onMounted(() => {
+        setupRadioButtons();
+    });
 </script>
