@@ -4,11 +4,11 @@
         <input type="text">
        </template>
 
-       <template v-slot:typeCheckbox>
+       <template v-slot:checkbox>
         <input type="checkbox">
        </template> 
 
-       <template v-slot:typeRadio>
+       <template v-slot:radio>
         <input type="radio">
        </template>
 
