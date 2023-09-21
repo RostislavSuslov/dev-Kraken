@@ -27,12 +27,11 @@
    import HWtitle from '../../components/HWtitle.vue';
    import DefaultInput from './input/DefaultInput.vue';
  
+    
    const firstInput = ref('Hello');
    const secondInput = ref('Hello');
-
-   const inputCustom = ref("#input-custom");
-
-   console.log(inputCustom);
+    const inputCustom = ref("#input-custom");
+    console.log(inputCustom);
 
    const onInput = (inputValue) => {
     firstInput.value = inputValue
@@ -65,21 +64,7 @@
         });
     }
 
-    const handleInputChange = () => {
-    if (firstInput.value === 'second' || secondInput.value === 'second') {
-        themes.custom();
-    }
-    }
-
-    function getInputVal() {
-        inputCustom.value.addEventListener("input", () => {
-            handleInputChange();
-        });
-    }
-
     onMounted(() => {
         setupRadioButtons();
-        getInputVal();
     });
-</script> 
- 
+</script>
