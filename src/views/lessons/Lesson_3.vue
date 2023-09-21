@@ -12,15 +12,13 @@
                            зміни теми  при вводі ключевого слова." />
 
         <form class="">
-            <div class="input-box flex flex-col my-10">
-                <label for="input-custom" class="flex mb-4">input-custom:</label>
-                <input type="text" id="input-custom" name="input-custom">
-            </div>
-            <br>
+ 
+            <DefaultInput id="input-custom"  v-model="firstInput" v-model:custom-input="secondInput"/>
+          
                 <h2>{{ firstInput }}</h2>
-            <br>
-            <DefaultInput :model-value="firstInput" @input="onInput"/>
-         
+                <h2>{{ secondInput }}</h2>
+
+            <DefaultInput id="input-default" v-model="firstInput" v-model:custom-input="secondInput"/>
         </form>
     </div>
     
@@ -32,6 +30,7 @@
  
     
    const firstInput = ref('Hello');
+   const secondInput = ref('Hello');
 
    const onInput = (inputValue) => {
     firstInput.value = inputValue
