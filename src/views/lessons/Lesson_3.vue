@@ -12,9 +12,7 @@
                            зміни теми  при вводі ключевого слова." />
 
         <form>
-            <template>
-                <span>Error</span>
-            </template>
+            
             <DefaultInput id="input-custom"  label="input-custom" v-model.trim.lazy="firstInput" v-model:custom-input="secondInput"/>
           
                 <h2>{{ firstInput }}</h2>
@@ -22,7 +20,6 @@
 
             <DefaultInput id="input-default"  label="input-default"  v-model="firstInput" v-model:custom-input="secondInput"/>
             
-           
         </form>
     </div>
     
