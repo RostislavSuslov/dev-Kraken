@@ -3,7 +3,6 @@
         <label for="input-default" class="flex mb-4">{{label}}</label>
         <input i :value="modelValue" @change="onChange" />
     </div>
-    
 </template>
 
 
