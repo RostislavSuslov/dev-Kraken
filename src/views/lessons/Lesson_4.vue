@@ -17,10 +17,12 @@
                   4) Подумайте як без умов можна виконати дану задачу проявіть ініціативу і логіку" />
 
 
-      <InputText></InputText>
+      <!-- <InputText></InputText>
       <Textarea></Textarea>
       <InputRadio></InputRadio>
-      <Select></Select>
+      <Select></Select> -->
+      <base-input name="login" error="error login" label="Login" /> 
+      <base-input name="password" type="password" /> 
   </div>
 </template>
 <script setup>
@@ -29,4 +31,5 @@
   import Textarea from '../../components/form/Textarea.vue';
   import InputRadio from '../../components/form/InputRadio.vue';
   import Select from '../../components/form/Select.vue';
+  import BaseInput from '../../components/ui/fields/BaseInput.vue';
 </script>

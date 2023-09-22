@@ -1,0 +1,19 @@
+<template>
+    <ui-fields-wrapper>
+        <select>
+
+        </select>
+        <template #helperText="data">
+            <slot name="helperText" v-bind="data"></slot>
+        </template>
+    </ui-fields-wrapper>
+</template>
+
+
+<script setup>
+import UiFieldsWrapper from './Wrapper.vue'
+
+defineProps({
+    options: Array
+ })
+</script>

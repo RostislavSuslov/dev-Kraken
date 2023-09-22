@@ -1,11 +1,11 @@
 <template>
-    <div>
+    <div class="border ....">
         <slot name="label">
             <label v-if="label">
                 {{ label }}
             </label>
         </slot>
-        <slot name="halperText" :helper-text="currentHelperText">
+        <slot v-if="currentHelperText || $slots.helperText" name="halperText" :helper-text="currentHelperText">
             <span :class="{'text-red-700': isError}">
                 {{ currentHelperText }}
             </span>
@@ -17,9 +17,9 @@
 <script setup>
 import { computed } from 'vue';
 
-defineProps({
+ const props = defineProps({
     label: String,
-    errpr: String,
+    error: String,
     helperText: String,
 })
 
