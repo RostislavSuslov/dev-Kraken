@@ -10,13 +10,14 @@
                            воно повинно синхронізуватись з дефолтним інпутом і навпаки
                         4) в кастомному інпуті додати логіку яка буде викликати тригер
                            зміни теми  при вводі ключевого слова." />
-        <form   >
+
+        <form>
             <DefaultInput id="input-custom"  label="input-custom" v-model.trim.lazy="firstInput" v-model:custom-input="secondInput"/>
+          
                 <h2>{{ firstInput }}</h2>
                 <h2>{{ secondInput }}</h2>
-            <DefaultInput />
 
-                
+            <DefaultInput id="input-default"  label="input-default"  v-model="firstInput" v-model:custom-input="secondInput"/>
         </form>
     </div>
     
