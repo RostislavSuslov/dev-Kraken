@@ -48,6 +48,11 @@
                             alertType: 'info',
                             alert: 'A simple info alert—check it out!',
                         },
+                        {   id: 7,
+                            type : 'password',
+                            alertType: 'warning',
+                            alert: 'A simple warning alert—check it out!',
+                        },
                     ];
 
     const slotsDataAlert = [{}, {}, {}, {}, {}, {},];

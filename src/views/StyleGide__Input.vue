@@ -1,7 +1,7 @@
 <template>
     <SlotInput>
         <template v-slot="slotsProps">
-            <input :type=slotsProps.item.type>
+            <input :type="slotsProps.item.type" />
             <div class="alert">
                 {{ slotsProps.item.alert }}
             </div>
