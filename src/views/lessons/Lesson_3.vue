@@ -28,22 +28,24 @@
     
 </template>
 <script setup>
-   import {ref, onMounted } from 'vue';
-   import HWtitle from '../../components/HWtitle.vue';
-   import DefaultInput from './input/DefaultInput.vue';
+    import {ref, onMounted, watch } from 'vue';
+    import HWtitle from '../../components/HWtitle.vue';
+    import DefaultInput from './input/DefaultInput.vue';
  
     
-   const firstInput = ref('Hello');
-   const secondInput = ref('Hello');
+    const firstInput = ref('Hello');
+    const secondInput = ref('Hello');
+   
     const inputCustom = ref("#input-custom");
     console.log(inputCustom);
 
-   const onInput = (inputValue) => {
-    firstInput.value = inputValue
-   }
+    const onInput = (inputValue) => {
+      firstInput.value = inputValue
+    }
 
-   const setupRadioButtons = () => {
-        const radioButtons = document.querySelectorAll('.radio-input');
+    const radioButtons = document.querySelectorAll('.radio-input');
+
+    const setupRadioButtons = () => {
 
         const themes = {
             first: () => {
@@ -68,6 +70,30 @@
             });
         });
     }
+
+ 
+
+    const checkForSecondKeyword = () => {
+    if (firstInput.value.toLowerCase().includes('second') || secondInput.value.toLowerCase().includes('second')) {
+        activateThemeSecond();
+        radioButtons[1].checked = true;
+    } else {
+        deactivateThemeSecond();
+        radioButtons[0].checked = true;
+    }
+    };
+
+    const activateThemeSecond = () => {
+    document.body.classList.add('theme-second');
+    };
+
+    const deactivateThemeSecond = () => {
+    document.body.classList.remove('theme-second');
+    };
+
+    // Watch for changes in firstInput and secondInput
+    watch([firstInput, secondInput], checkForSecondKeyword);
+
 
     onMounted(() => {
         setupRadioButtons();
