@@ -1,5 +1,5 @@
 <template>
-    <ui-fields-wrapper :error="error" :label="label" :helperText="helperText">
+    <ui-fields-wrapper :title="title" :error="error" :label="label" :helperText="helperText">
         <input :type="type" :value="modelValue"/>
         <template #helperText="data">
             <slot name="helperText" v-bind="data"></slot>
@@ -11,16 +11,18 @@
 <script setup>
 import UiFieldsWrapper from './Wrapper.vue'
 
-defineProps({
-    type:{
+const props = defineProps({
+    type: {
         type:String,
         default: 'text'
     },
-
-    modelValue: null,
+    
+    title: String,
     label: String,
     error: String,
     helperText: String,
+
+    modelValue: null,
  })
 
 defineEmits("update:modelValue");

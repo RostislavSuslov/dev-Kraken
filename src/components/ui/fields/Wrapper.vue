@@ -1,5 +1,10 @@
 <template>
     <div class="border ....">
+        <slot name="title">
+            <h3 v-if="title">
+                {{title}}
+            </h3>
+        </slot>
         <slot name="label">
             <label v-if="label">
                 {{ label }}
@@ -18,7 +23,8 @@
 <script setup>
 import { computed } from 'vue';
 
- const props = defineProps({
+const props = defineProps({
+    title: String,
     label: String,
     error: String,
     helperText: String,

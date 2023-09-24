@@ -16,15 +16,30 @@
                   3) cторінка  стаіл гайд  це App у вас поки, а у когось окрема сторінка.
                   4) Подумайте як без умов можна виконати дану задачу проявіть ініціативу і логіку" />
 
+  <!-- <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+             
+        </button>
 
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Кнопка 1
+        </button>
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-2">
+            Кнопка 2
+        </button>
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2">
+            Кнопка 3
+        </button>
+        <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded ml-2">
+            Кнопка 4
+        </button> -->
       <!-- <InputText></InputText>
       <Textarea></Textarea>
       <InputRadio></InputRadio>
       <Select></Select> -->
       <div class="flex justify-center mt-10">
-          <base-input name="login" error="error login" label="Login" /> 
-          <base-input name="Number"  helperText="helperText" label="Number" /> 
-          <base-select name="select"  label="select title"  error="doshlo!!!!!" /> 
+          <base-input title="Title!)" name="login" error="helperText login" label="Login" /> 
+          <base-input name="Number" helperText="helperText" label="Number" /> 
+          <base-select name="select" label="select title" error="doshlo!!!!!" /> 
           
           <base-input-radio name="login" error="error radio" label="animals 1" group="animals"/> 
           <base-input-radio name="radio" error="error radio" label="animals 2" group="animals"/> 
@@ -45,31 +60,25 @@
       
 
       <div class="flex justify-center mt-10">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Кнопка 1
-        </button>
-        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Кнопка 2
-        </button>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Кнопка 3
-        </button>
-        <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded ml-2">
-            Кнопка 4
-        </button>
+        <ui-fields-buttons firstBtnTitle="Title1" secondBtnTitle="Title2" thirdBtnTitle="Title3" /> 
+
+      
     </div>
+
+
+    
   </div>
 </template>
 <script setup>
   import HWtitle from '../../components/HWtitle.vue';
  
  
-  import Select from '../../components/form/Select.vue';
+ 
   import BaseInput from '../../components/ui/fields/BaseInput.vue';
   import BaseInputRadio from '../../components/ui/fields/BaseInputRadio.vue';
   import BaseInputCheckbox from '../../components/ui/fields/BaseInputCheckbox.vue';
   import BaseTextarea from '../../components/ui/fields/BaseTextarea.vue';
 
   import BaseSelect from '../../components/ui/fields/BaseSelect.vue';
- 
+  import ButtonsGroup from '../../components/ui/fields/ButtonsGroup.vue';
 </script>
