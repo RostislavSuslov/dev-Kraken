@@ -1,6 +1,7 @@
 <template>
     <ui-fields-wrapper :error="error" :label="label" :helperText="helperText">
-        <input :type="type" :value="modelValue"/>
+        <!-- <input :type="type" :value="modelValue"/> -->
+        <textarea :type="type" :value="modelValue" ></textarea>
         <template #helperText="data">
             <slot name="helperText" v-bind="data"></slot>
         </template>
