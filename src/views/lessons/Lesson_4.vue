@@ -22,7 +22,12 @@
       <InputRadio></InputRadio>
       <Select></Select> -->
       <base-input name="login" error="error login" label="Login" /> 
-      <base-input name="password" type="password" /> 
+      <base-input-number name="number" type="number"  error="invalid number" label="Хуй" /> 
+      <base-input name="file" type="file" label="download file"  /> 
+      <base-select name="select"  label="select title"  error="doshlo!!!!!" /> 
+
+
+   
   </div>
 </template>
 <script setup>
@@ -32,4 +37,6 @@
   import InputRadio from '../../components/form/InputRadio.vue';
   import Select from '../../components/form/Select.vue';
   import BaseInput from '../../components/ui/fields/BaseInput.vue';
+  import BaseInputNumber from '../../components/ui/fields/BaseInputNumber.vue';
+  import BaseSelect from '../../components/ui/fields/BaseSelect.vue';
 </script>

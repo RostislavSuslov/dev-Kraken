@@ -5,6 +5,7 @@
                 {{ label }}
             </label>
         </slot>
+        <slot /> <!-- input || select || radio || more tags-->
         <slot v-if="currentHelperText || $slots.helperText" name="halperText" :helper-text="currentHelperText">
             <span :class="{'text-red-700': isError}">
                 {{ currentHelperText }}
