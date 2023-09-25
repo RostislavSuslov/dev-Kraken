@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColor:         'var(--primaryColor)',
+        // primaryColor:         'var(--primaryColor)',
         brandPrimaryColor:    'var(--brandPrimaryColor)',
-        secondaryColor:       'var(--secondaryColor)',
+        // secondaryColor:       'var(--secondaryColor)',
         secondaryPurple:      'var(--secondaryPurple)',
         brandSecondaryColor:  'var(--brandSecondaryColor)',
         accentRed:            'var(--accentRed)',
@@ -26,7 +26,15 @@ module.exports = {
         darkBackground:       'var(--darkBackground)',
         darkSecondary:        'var(--darkSecondary)',
         darkTertiary:         'var(--darkTertiary)',
-      },
+
+        borderColor:          'var(--borderColor)',
+        primaryColor:        'var(--primaryColor)',
+        primaryAccentColor:  'var(--primaryAccentColor)',
+        secondaryColor:      'var(--secondaryColor)',
+        secondaryAccentColor:'var(--secondaryAccentColor)',
+        disable:             'var(--disable)',
+        disableAccent:       'var(--disableAccent)',
+},
       fontSize: {
          fsH1:              'var(--fsH1)',
          fsH2:              'var(--fsH2)',

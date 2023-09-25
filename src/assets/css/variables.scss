@@ -1,7 +1,7 @@
 /*primary theme*/
-$primaryColor:         #DBE6ED;
+//$primaryColor:         #DBE6ED;
 $brandPrimaryColor:    #4288B5;
-$secondaryColor:       #072E53;
+//$secondaryColor:       #072E53;
 $secondaryPurple:      #F4DCFF;
 $brandSecondaryColor:  #BA90CE;
 $accentRed:            #F2E1E0;
@@ -18,6 +18,16 @@ $grayQuaternary:       #323232;
 $darkBackground:       #0E3046;
 $darkSecondary:        #202637;
 $darkTertiary:         #001223;
+
+/*FME*/
+$borderColor: #9747FF;
+$primaryColor: #F8B737;
+$primaryAccentColor: #F2A100;
+$secondaryColor: #2E616F;
+$secondaryAccentColor: #183F49;
+$disable: #E5E1E6;
+$disableAccent: #BCBCBC;
+
 
 /*secondary theme*/
 $invertedBlue:            #103918;          //           #DBE6ED
@@ -40,6 +50,15 @@ $invertedDark:            #F1C5B9;          //           #0E3046
 $invertedDarkSecondary:   #DFD9C8;          //           #202637
 $invertedDarkThird:       #FFEEDC;          //           #001223
 
+/*FME invert*/
+$InvertBorderColor: #68B800;
+$InvertPrimaryColor: #0748C8;
+$InvertPrimaryAccentColor: #0D5EFF;
+$InvertSecondaryColor: #D19E90;
+$InvertSecondaryAccentColor: #E7C0B6;
+$InvertDisable: #1A1E19;
+$InvertDisableAccent: #434343;
+
 
 $fsH1:            36px;
 $fsH2:            24px;
@@ -54,9 +73,9 @@ $fsParagraph:     18px;
 $fsLink:          14px;
 
 :root {
-   --primaryColor:             #{$primaryColor};
+   //--primaryColor:             #{$primaryColor};
    --brandPrimaryColor:        #{$brandPrimaryColor};
-   --secondaryColor:           #{$secondaryColor};
+   //--secondaryColor:           #{$secondaryColor};
    --secondaryPurple:          #{$secondaryPurple};
    --brandSecondaryColor:      #{$brandSecondaryColor};
    --accentRed:                #{$accentRed};
@@ -73,6 +92,16 @@ $fsLink:          14px;
    --darkBackground:           #{$darkBackground};
    --darkSecondary:            #{$darkSecondary};
    --darkTertiary:             #{$darkTertiary};
+
+
+    /*FME*/
+    --borderColor:                 #{$borderColor};
+    --primaryColor:               #{$primaryColor};
+    --primaryAccentColor:         #{$primaryAccentColor};
+    --secondaryColor:             #{$secondaryColor};
+    --secondaryAccentColor:       #{$secondaryAccentColor};
+    --disable:                    #{$disable};
+    --disableAccent:              #{$disableAccent};
 
     --fsH1:          #{$fsH1};
     --fsH2:          #{$fsH2};
@@ -108,4 +137,13 @@ $fsLink:          14px;
     --darkBackground:           #{$invertedDark};
     --darkSecondary:            #{$invertedDarkSecondary};
     --darkTertiary:             #{$invertedDarkThird};
+
+    /*FME invert*/
+    --InvertBorderColor:            #{$InvertBorderColor};
+    --InvertPrimaryColor:           #{$InvertPrimaryColor};
+    --InvertPrimaryAccentColor:     #{$InvertPrimaryAccentColor};
+    --InvertSecondaryColor:         #{$InvertSecondaryColor};
+    --InvertSecondaryAccentColor:   #{$InvertSecondaryAccentColor};
+    --InvertDisable:                #{$InvertDisable};
+    --InvertDisableAccent:          #{$InvertDisableAccent};
 }
