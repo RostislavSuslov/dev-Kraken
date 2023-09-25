@@ -8,12 +8,12 @@
         <slot name="secondBtn">
             <h3 v-if="secondBtnTitle">
                 {{ secondBtnTitle }}
-            </h3>    
+            </h3>
         </slot>
         <slot name="thirdBtn">
             <h3 v-if="thirdBtnTitle" >
                 {{ thirdBtnTitle }}
-            </h3>    
+            </h3>
         </slot>
     </div>
 </template>
