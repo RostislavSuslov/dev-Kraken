@@ -1,19 +1,19 @@
 <template>
     <ui-fields-buttons :firstBtnTitle="firstBtnTitle" :secondBtnTitle="secondBtnTitle" :thirdBtnTitle="thirdBtnTitle"
         :backgroundColor="backgroundColor">
-        <template #firstBtnTitle="data">
+        <template>
             <h3 :firstBtnTitle="firstBtnTitle"
                 class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
                 {{ firstBtnTitle }}
             </h3>
         </template>
-        <template #secondBtn="data">
-            <h :secondBtnTitle="secondBtnTitle"
+        <template>
+            <h3 :secondBtnTitle="secondBtnTitle"
                 class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
                 {{ secondBtnTitle }}
-            </h>
+            </h3>
         </template>
-        <template #thirdBtn="data">
+        <template>
             <h3 :thirdBtnTitle="thirdBtnTitle"
                 class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
                 {{ thirdBtnTitle }}

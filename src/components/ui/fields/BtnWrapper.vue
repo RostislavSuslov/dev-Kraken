@@ -1,9 +1,9 @@
 <template>
     <div class="flex justify-between items-center">
         <slot name="firstBtn">
-            <hh3 v-if="firstBtnTitle">
+            <h3 v-if="firstBtnTitle">
                 {{ firstBtnTitle }}
-            </hh3>
+            </h3>
         </slot>
         <slot name="secondBtn">
             <h3 v-if="secondBtnTitle">
