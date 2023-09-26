@@ -37,15 +37,25 @@
     const radioButtons = document.querySelectorAll('.radio-input');
 
     const setupRadioButtons = () => {
-        const themes = {
-          remove_theme_second: () => {
-            document.body.classList.remove('theme-second');
-          },
-          add_theme_second: () => {
-            document.body.classList.add('theme-second');
-          },
-          //add more thems
-        };
+        // const themes = {
+        //   remove_theme_second: () => {
+        //     document.body.classList.remove('theme-second');
+        //   },
+        //   add_theme_second: () => {
+        //     document.body.classList.add('theme-second');
+        //   },
+        //   //add more thems
+        // };
+
+      const themes = {
+        first: () => {
+          document.body.classList.remove('theme-second');
+        },
+        custom: () => {
+          document.body.classList.add('theme-second');
+        },
+        //add more thems
+      };
         const handleRadioButtonChange = (radioButton) => {
             const themeFunction = themes[radioButton.id];
             if (themeFunction) {
