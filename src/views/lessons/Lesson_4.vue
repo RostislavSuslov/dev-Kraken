@@ -1,12 +1,16 @@
 <template>
   <div class="flex flex-col">
-      <HWtitle 
-      title="Lesson 4" 
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                   Beatae est magnam ipsam impedit repellendus quis, facilis
-                   numquam vel saepe amet?" />
+    <HWtitle :title="title" :tasks="tasks"/>
   </div>
 </template>
 <script setup>
-  import HWtitle from '../../components/HWtitle.vue';
+import HWtitle from '../../components/HWtitle.vue';
+import { ref } from 'vue';
+
+const title = "Lesson 4"
+const tasks = ref([
+  { description: "Задача 1" },
+  { description: "Задача 2" },
+  { description: "Задача 3" },
+])
 </script>

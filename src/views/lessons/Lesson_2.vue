@@ -1,10 +1,6 @@
 <template>
     <div class="flex flex-col">
-      <HWtitle 
-      title="Lesson 2" 
-      description="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                   Beatae est magnam ipsam impedit repellendus quis, facilis
-                   numquam vel saepe amet?" />
+      <HWtitle :title="title" :tasks="tasks" />
 
       <ul class="color-list flex m-3 mx-15 flex-wrap items-start">
           <ColorCardEasy title="grayQuaternary" classColor="bg-grayQuaternary" description="#527483" />
@@ -23,5 +19,15 @@
 <script setup>
     import HWtitle from '../../components/HWtitle.vue';
     import ColorCardEasy from '../../components/ColorCardEasy.vue';
+    import {ref  } from 'vue';
+
+
+
+
+    const title = "Lesson 2"
+    const tasks = ref([
+      { description: "1) Зробити ColorCard" },
+    ])
+
 </script>
  

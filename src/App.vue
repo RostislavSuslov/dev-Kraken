@@ -1,5 +1,5 @@
 <template>
-    <div id="root">
+    <div id="root" class="max-w-screen-xl mx-auto grid grid-cols-[345px] 1fr grid-rows-1 grid-cols-1 gap-x-[30px] min-h-screen relative">
         <Sidebar />
         <Main />
     </div>
