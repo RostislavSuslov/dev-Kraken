@@ -20,7 +20,7 @@
 <script setup>
     import {ref, onMounted, watch } from 'vue';
     import HWtitle from '../../components/HWtitle.vue';
-    import DefaultInput from './input/DefaultInput.vue';
+    import DefaultInput from '../../components/ui/DefaultInput.vue';
 
 
     const title = "Lesson 3"
@@ -37,16 +37,6 @@
     const radioButtons = document.querySelectorAll('.radio-input');
 
     const setupRadioButtons = () => {
-        // const themes = {
-        //   remove_theme_second: () => {
-        //     document.body.classList.remove('theme-second');
-        //   },
-        //   add_theme_second: () => {
-        //     document.body.classList.add('theme-second');
-        //   },
-        //   //add more thems
-        // };
-
       const themes = {
         first: () => {
           document.body.classList.remove('theme-second');
